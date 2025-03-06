@@ -45,7 +45,7 @@ const Register = () => {
             // console.log("Form submitted with values: ", {username, email,password});
             // localStorage.setItem("User", JSON.stringify({username,email,password}));
             // dispatch(login({username,email,password}));
-            const response = await fetch("http://localhost:3000/register", {
+            const response = await fetch("https://render-webserver-csqu.onrender.com/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify({username, email, password}),
